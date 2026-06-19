@@ -74,12 +74,22 @@ const CONTACT_ITEMS: {
 }[] = [
   {
     label: "Email",
-    lines: ["info@cityboymoves.com"],
-    href: "mailto:info@cityboymoves.com",
+    lines: ["hello@cityboymoves.com"],
+    href: "mailto:hello@cityboymoves.com",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
         <path d="M22 6l-10 7L2 6" />
+      </svg>
+    ),
+  },
+  {
+    label: "Phone",
+    lines: ["+2347031986969"],
+    href: "tel:+2347031986969",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
       </svg>
     ),
   },
@@ -259,12 +269,26 @@ export default function ContactPage() {
         className="px-6 py-5"
         style={{ background: THEME.bgElevated, borderBottom: `1px solid ${THEME.borderSubtle}` }}
       >
-        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", alignItems: "center", gap: 12 }}>
           <img
             src={cityBoyLogo}
             alt="CityBoy"
             style={{ height: 36, width: "auto", display: "block" }}
           />
+          <span
+            style={{
+              fontSize: 22,
+              fontWeight: 800,
+              letterSpacing: "-0.3px",
+              backgroundImage: "linear-gradient(90deg, #FFB37A 0%, #fde2cd 50%, #C9A6FF 100%)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              color: "transparent",
+            }}
+          >
+            CityBoy
+          </span>
         </div>
       </header>
 
