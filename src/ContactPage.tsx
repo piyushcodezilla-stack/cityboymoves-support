@@ -727,8 +727,11 @@ export default function ContactPage() {
             <h3 id="success-title" style={{ color: THEME.text, fontSize: 20, fontWeight: 700, margin: "0 0 10px" }}>
               Message sent!
             </h3>
-            <p style={{ color: THEME.textSecondary, fontSize: 14, margin: "0 0 24px", lineHeight: 1.6 }}>
+            <p style={{ color: THEME.textSecondary, fontSize: 14, margin: "0 0 8px", lineHeight: 1.6 }}>
               {responseMessage || "Thanks for reaching out. Someone from our team will be in touch within 1 business day."}
+            </p>
+            <p style={{ color: THEME.textMuted, fontSize: 13, margin: "0 0 24px", lineHeight: 1.6 }}>
+              Our team will connect with you shortly.
             </p>
             <button
               type="button"
