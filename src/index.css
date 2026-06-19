@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --text: #9ba3b5;
+  --text-h: #f1f3f9;
+  --bg: #0b0d14;
+  --border: #2a3040;
+  --accent: #7f77dd;
+
+  font-family: Inter, system-ui, "Segoe UI", Roboto, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-h);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 0.9s linear infinite;
+}
